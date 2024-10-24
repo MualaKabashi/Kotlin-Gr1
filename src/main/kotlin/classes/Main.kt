@@ -1,5 +1,8 @@
 package classes
 
+import encapsulation.Book
+import encapsulation.Client
+
 
 fun main() {
 
@@ -39,7 +42,49 @@ fun main() {
     var bankInfo = BankInformation(name = "Muala", isValid = true, cardNumber = 4564534, amount = 12.0)
     var bankInfo1 = BankInformation(name = "Muala", 12131, false, amount = 125.0)
 
+    println("------------------------------------------")
+
+    var client = Client()
+    println(client.information)
+    client.name = "Ema"
+    client.surname = "Gashi"
+    println(client.information)
+
+    client.age = -12
+
+    println(client.age)
+    client.age = 25
+    println(client.age)
+
+
+    client.address = "Dhimiter Fullani"
+    client.address
+
+
+    var book = Book("Game of Thrones", -1)
+    book.bookName = "Test"
+    var book1 = Book("It ends with us", 100)
+    book.number = -123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
 
 
 
